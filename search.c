@@ -8,10 +8,18 @@ int search(int A[], int num_elements, int num) {
     }
     return -1;
 }
-
+/*
+%d int
+%f float
+%s string
+%l long
+%u unsigned
+%lu long unsigned
+*/
 int main() {
     int a[] = {1, 3, 2, 4 ,5, 6, 6};
-    int s = search(a, 7, 6);
-    printf("%d", s);
+    int num = 6;
+    int s = search(a, 7, num);
+    printf("The index is: %d, or num: %d", s, num);
     return 0;
 }
