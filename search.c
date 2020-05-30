@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+//return type int
 int search(int A[], int num_elements, int num) {
     for (int i = 0; i < num_elements; ++i) {
         if (A[i] == num) {
@@ -16,6 +16,7 @@ int search(int A[], int num_elements, int num) {
 %u unsigned
 %lu long unsigned
 */
+//main has int return type
 int main() {
     int a[] = {1, 3, 2, 4 ,5, 6, 6};
     int num = 6;
