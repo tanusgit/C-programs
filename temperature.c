@@ -16,7 +16,7 @@ void temperature(){
     farhenite = lower;
     while(farhenite <= upper){
         celsius = 5 * (farhenite-32)/9;
-        printf("fahrenhite = %d celsius = %d, ", farhenite, celsius);
+        printf("fahrenhite = %.6d celsius = %d, ", farhenite, celsius);
         farhenite = farhenite + step;
 
     }
