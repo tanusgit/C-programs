@@ -49,7 +49,7 @@ int main()
     {
         c = getchar();
     }
-    
+
     printf("enter item name:\n");
     scanf("%s", &name);
     strcpy(item1.itemName, name);
