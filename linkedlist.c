@@ -132,6 +132,21 @@ struct node* reverse_ll_new(struct node* head)
 	}
 	return p;
 }
+
+void delete(struct node* head, int d){
+	struct node* temp = head;
+	struct node* later = NULL; 
+	int key;
+	while(temp!= NULL){
+		temp->next = later;
+		key = later->data;
+		if(key == d){
+			later->next = later;
+		}
+	}
+	head->next = later;
+
+}
 		
 void printi(struct node* head)
 {
@@ -154,6 +169,9 @@ int count(struct node* head)
 	return n_count;
 
 }
+
+
+
 int main()
 {
 	struct node* head=NULL;
