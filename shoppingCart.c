@@ -44,31 +44,31 @@ int main()
     int price;
     int quant;
 
-    printf("Item1:\n");
-    printf("enter item name:\n");
+    printf("Item1:");
+    printf("enter item name:");
     scanf("%[^\n]s", name);
     strcpy(item1.itemName, name);
 
-    printf("enter item price:\n");
+    printf("enter item price:");
     scanf("%d", &price);
     item1.itemPrice = price;
 
-    printf("enter item quantity:\n");
+    printf("enter item quantity:");
     scanf("%d", &quant);
     item1.itemQuantity = quant;
     //printf("%s %d %d \n", item1.itemName, item1.itemPrice, item1.itemQuantity);
     //PrintItemCost(item1);
 
-    printf("Item2:\n");
-    printf("enter item name:\n");
+    printf("Item2:");
+    printf("enter item name:");
     scanf("%[^\n]s", name);
     strcpy(item2.itemName, name);
 
-    printf("enter item price:\n");
+    printf("enter item price:");
     scanf("%d", &price);
     item2.itemPrice = price;
 
-    printf("enter item quantity:\n");
+    printf("enter item quantity:");
     scanf("%d", &quant);
     item2.itemQuantity = quant;
     //printf("%s %d %d \n", item2.itemName, item2.itemPrice, item2.itemQuantity);
@@ -77,7 +77,7 @@ int main()
     printf("TOTAL COST\n");
     PrintItemCost(item1);
     PrintItemCost(item2);
-  // printf("Total: $%d\n", item2.itemQuantity+item1.itemQuantity);
+    printf("Total: $%d\n", item2.itemQuantity+item1.itemQuantity);
     /* item1.itemPrice = 25;
     item1.itemQuantity = 2;
     strcpy(item1.itemName, "Nila");
